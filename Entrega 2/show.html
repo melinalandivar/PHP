@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Play | Peliculas online</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="icon" type="image/png" href="img/imagenes/logopagina.png" />
+	<script src="js/show.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div class="contpagina">
+		<!-EMPIEZA HEADER->
+		<header>
+			
+			<a href="index.html"><img src="img/imagenes/logopagina.png" alt="Logo"/> </a>
+			<nav>
+
+				<ul>    
+					<li><a href="index.html"><strong>Inicio</strong></a></li>
+					<li><a href="peliculas.html"><strong>Películas</strong></a></li>
+					<li><a href="cartelera.html"><strong>Cartelera</strong></a></li>
+					<li><a href="nosotros.html"><strong>Conocenos</strong></a></li>
+				</ul>
+				
+
+			</nav>
+			
+		</header>
+
+		<div class="posters">
+			<article>
+				<div>
+					<img  src="img/imagenes/angrybirds.jpg">
+				</div>
+				<div class="textopelicula" >
+					<h2>Angry Birds 2: La 
+						Película </h2>
+						<br/>
+						<p>Fecha de estreno: 15 de agosto de 2019.</p>
+						<br/>
+						<p>Género: Animación.</p>
+						<br/>
+						<p>Sinópsis: Secuela de la película "Angry Birds" en la que Red, Chuck, Bomb y el resto de sus amigos con plumas son abordados por un cerdo verde que les pide que se unan para luchar contra una amenaza común. Las aves agresivas de una isla cubierta de hielo planean usar un arma casera para destruir el modo de vida de las aves y los cerdos. El grupo deberá infiltrarse en la isla y detener el dispositivo.</p>
+					</div>
+				</article>
+
+
+
+				<!--comentarios -->
+				<div class="comentarios">
+
+					<p>Esto es un comentario 1</p>
+					<p>Esto es un comentario 2</p>
+					<p>Esto es un comentario 3</p>
+					<p>Esto es un comentario 4</p>	
+
+
+					<!--fin comentarios -->
+					<h2> Deje aqui su comentario </h2>
+					<!-- form comentarios -->
+					
+						
+					<form onsubmit="return validar(this)" >
+						<div class="puntaje">
+							<div class="form_row">
+								<textarea name="comment" ></textarea>
+							</div>
+							<label> Calificación</label>
+							<select name="Calificacion" form="Calificacion">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+							<input type="submit" name="Enviar" value="Publicar" class="submit_btn" />
+						
+							
+						
+						</div>
+					</form> 
+					
+					<!--fin form comentarios -->
+				</div>
+			</div>	
+			<footer>
+				<div class="contfooter">
+					<ul>
+						<li><p>¿Qué es Movie Play? | &nbsp </p></li>
+						<li><p>Danos tu opinión | &nbsp </p></li>
+						<li><p>Contactate | &nbsp </p></li>
+						<li><p>Términos de uso | &nbsp </p></li>
+						<li><p>Políticas de privacidad | &nbsp </p></li>
+						<li><p>Seguinos &nbsp</p></li>
+					</ul>
+				</div>
+				
+				<div class="copyright">
+					<p>© 2019 | Movie Play</p>
+					<div class="redessociales">
+						<a href="https://www.instagram.com"><img src="img/imagenes/instagram.jpg" alt="Logo Instagram"></a>
+						<a href="https://twitter.com/"><img src="img/imagenes/twitter.jpg" alt="Logo Twitter"></a>
+						<a href="https://www.facebook.com/"><img src="img/imagenes/facebook.jpg" alt="Logo Facebook"></a>
+					</div>
+				</div>
+				
+			</footer>
+		</body>
+		</html>
+	</div>

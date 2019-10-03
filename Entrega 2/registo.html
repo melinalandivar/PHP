@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Play | Peliculas online</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="icon" type="image/png" href="img/imagenes/logopagina.png" />
+    <script type="text/javascript">
+function validar(form){
+
+if(form.mail.value==""){
+alert ("EL CAMPO E-MAIL ES OBLIGATORIO DEBE INGRESARLO");
+form.mail.focus();return false;
+}
+if(form.password.value == "") {
+alert ("EL CAMPO PASSWORD ES OBLIGATORIO");
+form.password.focus();return false;
+}
+if(form.password2.value == "") {
+alert ("EL CAMPO RECTIFICAR CONTRASEÑA ES OBLIGATORIO");
+form.password2.focus();return false;
+}
+if(form.password.value != form.password2.value){
+alert ("Las 2 contraseñas no coniciden");
+form.password.focus();return false;
+}
+if(form.pais.value == "") {
+alert ("EL CAMPO PAÍS ES OBLIGATORIO");
+form.pais.focus();return false;
+}
+return true;
+
+}
+</script>
+</head>
+<body>
+	<div class="contpagina">
+		<!-EMPIEZA HEADER->
+		<header>
+			
+			<a href="index.html"><img src="img/imagenes/logopagina.png" alt="Logo"/> </a>
+			
+			<nav>
+
+				<ul>    
+					<li><a href="index.html"><strong>Inicio</strong></a></li>
+					<li><a href="peliculas.html"><strong>Películas</strong></a></li>
+					<li><a href="cartelera.html"><strong>Cartelera</strong></a></li>
+					<li><a href="nosotros.html"><strong>Conocenos</strong></a></li>
+				</ul>
+				
+
+			</nav>
+            
+            <a href="registo.html"><img src="img/imagenes/user_icon-icons.com_66546.png" alt="icono"/></a>
+			
+		</header>
+        
+    <!-EMPIEZA REGISTRO ->
+        
+ 
+
+<h4 class="titulo">TU CORREO SERÁ EL NOMBRE DE USUARIO PARA PODER INGRESAR A LA PÁGINA</h4>
+<form action="registrarusuario.php" method="post" onsubmit="return validar(this);" class="registro">
+<p>USUARIO:
+<input type="text" name="mail" value="" />
+<br>
+<br>
+CONTRASEÑA:
+<input type="password" name="password" maxlength="8" value="" />
+</p>
+<p>REPITE TU CONTRASE&Ntilde;A
+<input type="password" name="password2" maxlength="8" value="" />
+<br>
+<BR>
+NOMBRE:
+<input type="text" name="nombre" value="" />
+</BR>
+</p>
+<BR>
+APELLIDO:
+<input type="text" name="apellido" value="" />
+</BR>
+<p><input type="submit" value="Enviar datos" name="enviar" />
+<input type="reset" value="Restablecer" name="B2" /></p>
+</form>
+
+</body>
+</html> 
